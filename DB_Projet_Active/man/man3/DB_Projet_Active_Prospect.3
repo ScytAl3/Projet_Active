@@ -1,0 +1,226 @@
+.TH "DB_Projet_Active.Prospect" 3 "Mon Apr 1 2019" "Version 0.1" "Projet_Active_c#" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DB_Projet_Active.Prospect
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBDB_Projet_Active\&.Client\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProspect\fP ()"
+.br
+.RI "Constructeur par defaut "
+.ti -1c
+.RI "\fBProspect\fP (string raison, string type, string domaine, string adresse, string numTel, int chiffre, string commentaires, int nbEmploye, DateTime dateProsp, bool interet)"
+.br
+.RI "Constructeur avec 10 variables pour instancier la Class \fBProspect\fP pour creation "
+.ti -1c
+.RI "bool \fBRelancer\fP ()"
+.br
+.RI "Methode qui verifie que la duree entre la date de prospection + 30 jours est inferieure a la date du jour et que le prospect est interresse "
+.ti -1c
+.RI "override void \fBCreaClient\fP (string f_laTable)"
+.br
+.RI "Methode d instance pour la creation d un prospect dans la table PROSPECT "
+.ti -1c
+.RI "override void \fBMise_A_Jour\fP (string f_laTable)"
+.br
+.RI "Methode d instance pour la mise à jour des attributs d un prospect de la table PROSPECT "
+.ti -1c
+.RI "override void \fBSupClient\fP (string f_laTable, int numId)"
+.br
+.RI "Methode d instance pour la suppression d un prospect dans la table PROSPECT "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static new List< \fBClient\fP > \fBAfficheListClient\fP (string laTable)"
+.br
+.RI "Methode de Class qui renvoie la liste de tous les Prospects de la table selectionnee "
+.ti -1c
+.RI "static void \fBDernierIdCreer\fP ()"
+.br
+.RI "Methode de class pour recuperer le dernier identifiant \fBProspect\fP creer "
+.ti -1c
+.RI "static int \fBCrea_NumIdProspect\fP ()"
+.br
+.RI "Methode pour creer le numero identifiant d un PROSPECT : annee + nombre incremente "
+.ti -1c
+.RI "static void \fBIncrementerCompeur\fP ()"
+.br
+.RI "Methode pour incrementer le compteur "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBdernierIdentifiant\fP"
+.br
+.ti -1c
+.RI "static int \fBderniereAnee\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "DateTime \fBacc_dateProspect\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "bool \fBacc_interetProspec\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DB_Projet_Active\&.Prospect\&.Prospect ()"
+
+.PP
+Constructeur par defaut 
+.SS "DB_Projet_Active\&.Prospect\&.Prospect (string raison, string type, string domaine, string adresse, string numTel, int chiffre, string commentaires, int nbEmploye, DateTime dateProsp, bool interet)"
+
+.PP
+Constructeur avec 10 variables pour instancier la Class \fBProspect\fP pour creation 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIraison\fP 
+.br
+\fItype\fP 
+.br
+\fIdomaine\fP 
+.br
+\fIadresse\fP 
+.br
+\fInumTel\fP 
+.br
+\fIchiffre\fP 
+.br
+\fIcommentaires\fP 
+.br
+\fInbEmploye\fP 
+.br
+\fIdateProsp\fP 
+.br
+\fIinteret\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static new List<\fBClient\fP> DB_Projet_Active\&.Prospect\&.AfficheListClient (string laTable)\fC [static]\fP"
+
+.PP
+Methode de Class qui renvoie la liste de tous les Prospects de la table selectionnee 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlaTable\fP 
+.br
+\fIleWhere\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static int DB_Projet_Active\&.Prospect\&.Crea_NumIdProspect ()\fC [static]\fP"
+
+.PP
+Methode pour creer le numero identifiant d un PROSPECT : annee + nombre incremente 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "override void DB_Projet_Active\&.Prospect\&.CreaClient (string f_laTable)\fC [virtual]\fP"
+
+.PP
+Methode d instance pour la creation d un prospect dans la table PROSPECT 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIf_laTable\fP 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBDB_Projet_Active\&.Client\fP\&.
+.SS "static void DB_Projet_Active\&.Prospect\&.DernierIdCreer ()\fC [static]\fP"
+
+.PP
+Methode de class pour recuperer le dernier identifiant \fBProspect\fP creer 
+.SS "static void DB_Projet_Active\&.Prospect\&.IncrementerCompeur ()\fC [static]\fP"
+
+.PP
+Methode pour incrementer le compteur 
+.SS "override void DB_Projet_Active\&.Prospect\&.Mise_A_Jour (string f_laTable)\fC [virtual]\fP"
+
+.PP
+Methode d instance pour la mise à jour des attributs d un prospect de la table PROSPECT 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIf_laTable\fP 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBDB_Projet_Active\&.Client\fP\&.
+.SS "bool DB_Projet_Active\&.Prospect\&.Relancer ()"
+
+.PP
+Methode qui verifie que la duree entre la date de prospection + 30 jours est inferieure a la date du jour et que le prospect est interresse 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdateProspection\fP date a laquelle a eu lieu la prospection
+.br
+\fIinteret\fP interet du prospect =true, =false
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "override void DB_Projet_Active\&.Prospect\&.SupClient (string f_laTable, int numId)\fC [virtual]\fP"
+
+.PP
+Methode d instance pour la suppression d un prospect dans la table PROSPECT 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIf_laTable\fP le nom de la table, ici 'PROSPECT'
+.br
+\fInumId\fP le numero d identification du prospect que l on veut supprimer, obtenu a partir du DataGridView
+.RE
+.PP
+
+.PP
+Reimplemented from \fBDB_Projet_Active\&.Client\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int DB_Projet_Active\&.Prospect\&.derniereAnee\fC [static]\fP"
+
+.SS "int DB_Projet_Active\&.Prospect\&.dernierIdentifiant\fC [static]\fP"
+
+.SH "Property Documentation"
+.PP 
+.SS "DateTime DB_Projet_Active\&.Prospect\&.acc_dateProspect\fC [get]\fP, \fC [set]\fP"
+
+.SS "bool DB_Projet_Active\&.Prospect\&.acc_interetProspec\fC [get]\fP, \fC [set]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_Active_c# from the source code\&.

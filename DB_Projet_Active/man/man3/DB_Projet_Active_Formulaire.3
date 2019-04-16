@@ -1,0 +1,135 @@
+.TH "DB_Projet_Active.Formulaire" 3 "Mon Apr 1 2019" "Version 0.1" "Projet_Active_c#" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DB_Projet_Active.Formulaire \- La Class \fBFormulaire\fP qui affiche, dans des TextBox, DateTimePicker et CheckBox, les informations concernant la creation ou la mise a jour des CLIENTS ou des PROSPECTS\&. Contient les methodes pour controler la saisie, et les differents boutons (valider et retour)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Form\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFormulaire\fP ()"
+.br
+.RI "Constructeur par defaut "
+.ti -1c
+.RI "\fBFormulaire\fP (bool choix, string typGes, string table)"
+.br
+.RI "Constructeur avec 3 parametres pour la creation d un CLIENT/PROSPECT "
+.ti -1c
+.RI "\fBFormulaire\fP (bool choix, string typGes, string table, \fBClient\fP maj_client)"
+.br
+.RI "Constructeur avec 4 parametres pour la mise a jour d un CLIENT/PROSPECT "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "Clean up any resources being used\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBacc_gestClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_typeGestion\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBacc_idClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_laTable\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBClient\fP \fBAcc_leClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBProspect\fP \fBAcc_leProspect\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La Class \fBFormulaire\fP qui affiche, dans des TextBox, DateTimePicker et CheckBox, les informations concernant la creation ou la mise a jour des CLIENTS ou des PROSPECTS\&. Contient les methodes pour controler la saisie, et les differents boutons (valider et retour) 
+
+Auteur : Franck Jakubowski
+.PP
+Version : 0\&.1
+.PP
+Date de creation : 07/01/2019
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DB_Projet_Active\&.Formulaire\&.Formulaire ()"
+
+.PP
+Constructeur par defaut 
+.SS "DB_Projet_Active\&.Formulaire\&.Formulaire (bool choix, string typGes, string table)"
+
+.PP
+Constructeur avec 3 parametres pour la creation d un CLIENT/PROSPECT 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIchoix\fP true=CLIENT, false=PROSPECT
+.br
+\fItypGes\fP 'CREA'
+.br
+\fItable\fP 'CLIENT' ou 'PROSPECT'
+.RE
+.PP
+
+.SS "DB_Projet_Active\&.Formulaire\&.Formulaire (bool choix, string typGes, string table, \fBClient\fP maj_client)"
+
+.PP
+Constructeur avec 4 parametres pour la mise a jour d un CLIENT/PROSPECT 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIchoix\fP true=CLIENT, false=PROSPECT
+.br
+\fItypGes\fP 'MAJ'
+.br
+\fItable\fP 'CLIENT' ou 'PROSPECT'
+.br
+\fImaj_client\fP Object selectionne dans le DataGridView
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "override void DB_Projet_Active\&.Formulaire\&.Dispose (bool disposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "bool DB_Projet_Active\&.Formulaire\&.acc_gestClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "int DB_Projet_Active\&.Formulaire\&.acc_idClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Formulaire\&.acc_laTable\fC [get]\fP, \fC [set]\fP"
+
+.SS "\fBClient\fP DB_Projet_Active\&.Formulaire\&.Acc_leClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "\fBProspect\fP DB_Projet_Active\&.Formulaire\&.Acc_leProspect\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Formulaire\&.acc_typeGestion\fC [get]\fP, \fC [set]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_Active_c# from the source code\&.

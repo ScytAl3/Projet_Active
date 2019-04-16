@@ -1,0 +1,336 @@
+\section{D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client Class Reference}
+\label{class_d_b___projet___active_1_1_client}\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+
+
+La Class \doxyref{Client}{p.}{class_d_b___projet___active_1_1_client} qui permet d instancier des Clients. Contient les methodes pour generer la liste de client, creer, mettre a jour et supprimer un client  
+
+
+
+
+Inherited by \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Client} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut \end{DoxyCompactList}\item 
+\textbf{ Client} (string raison, string type, string domaine, string adresse, string num\+Tel, int chiffre, string commentaires, int nb\+Employe)
+\begin{DoxyCompactList}\small\item\em Constructeur avec 8 variables pour instancier la class \doxyref{Client}{p.}{class_d_b___projet___active_1_1_client} pour mise a jour \end{DoxyCompactList}\item 
+bool \textbf{ Raison\+Sociale\+Match} (string a\+Comparer)
+\begin{DoxyCompactList}\small\item\em Methode d\textquotesingle{}intance pour comparer le nom de la raison sociale avec une saisie dynamique \end{DoxyCompactList}\item 
+virtual void \textbf{ Crea\+Client} (string f\+\_\+la\+Table)
+\begin{DoxyCompactList}\small\item\em Methode d instance pour la creation des champs de la table \end{DoxyCompactList}\item 
+virtual void \textbf{ Mise\+\_\+\+A\+\_\+\+Jour} (string f\+\_\+la\+Table)
+\begin{DoxyCompactList}\small\item\em Methode d instance pour la mise à jour des champs de la table \end{DoxyCompactList}\item 
+virtual void \textbf{ Sup\+Client} (string f\+\_\+la\+Table, int num\+Id)
+\begin{DoxyCompactList}\small\item\em Methode pour supprimer un \doxyref{Client}{p.}{class_d_b___projet___active_1_1_client}... et il y a beaucoup de tables à contrôler, donc seul le bouton pour un \doxyref{Prospect}{p.}{class_d_b___projet___active_1_1_prospect} a ete code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \textbf{ Client} $>$ \textbf{ Affiche\+List\+Client} (string la\+Table)
+\begin{DoxyCompactList}\small\item\em Methode de Class qui renvoie la liste de tous les clients de la table selectionnee \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ id\+Client}
+\item 
+string \textbf{ rs\+Client}
+\item 
+string \textbf{ type\+Client}
+\item 
+string \textbf{ domaine\+Client}
+\item 
+string \textbf{ adr\+Client}
+\item 
+string \textbf{ tel\+Client}
+\item 
+int \textbf{ ca\+Client}
+\item 
+string \textbf{ comm\+Client}
+\item 
+int \textbf{ nbr\+Emp}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ acc\+\_\+id\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+rs\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+type\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+domaine\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+adr\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+tel\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+int \textbf{ acc\+\_\+ca\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+comm\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+int \textbf{ acc\+\_\+nbr\+Emp}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La Class \doxyref{Client}{p.}{class_d_b___projet___active_1_1_client} qui permet d instancier des Clients. Contient les methodes pour generer la liste de client, creer, mettre a jour et supprimer un client 
+
+Auteur \+: Franck Jakubowski
+
+Version \+: 0.\+1
+
+Date de creation \+: 07/01/2019
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_client_ac2417af48ade43fe2d15374575410aee}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!Client@{Client}}
+\index{Client@{Client}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{Client()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut 
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a48462a75f0a3ab7c52f503d0bfd23bb2}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!Client@{Client}}
+\index{Client@{Client}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{Client()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Client (\begin{DoxyParamCaption}\item[{string}]{raison,  }\item[{string}]{type,  }\item[{string}]{domaine,  }\item[{string}]{adresse,  }\item[{string}]{num\+Tel,  }\item[{int}]{chiffre,  }\item[{string}]{commentaires,  }\item[{int}]{nb\+Employe }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec 8 variables pour instancier la class \doxyref{Client}{p.}{class_d_b___projet___active_1_1_client} pour mise a jour 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raison} & \\
+\hline
+{\em type} & \\
+\hline
+{\em domaine} & \\
+\hline
+{\em adresse} & \\
+\hline
+{\em num\+Tel} & \\
+\hline
+{\em chiffre} & \\
+\hline
+{\em nb\+Employe} & \\
+\hline
+{\em commentaires} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_client_adb916b643dfd56ce85b7b484851e613b}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!AfficheListClient@{AfficheListClient}}
+\index{AfficheListClient@{AfficheListClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{AfficheListClient()}
+{\footnotesize\ttfamily static List$<$\textbf{ Client}$>$ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Affiche\+List\+Client (\begin{DoxyParamCaption}\item[{string}]{la\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode de Class qui renvoie la liste de tous les clients de la table selectionnee 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la\+Table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_client_ad31485e21106ffd53bb272b5fd520b5a}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!CreaClient@{CreaClient}}
+\index{CreaClient@{CreaClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{CreaClient()}
+{\footnotesize\ttfamily virtual void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Crea\+Client (\begin{DoxyParamCaption}\item[{string}]{f\+\_\+la\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Methode d instance pour la creation des champs de la table 
+
+
+
+Reimplemented in \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect} \doxyref{}{p.}{class_d_b___projet___active_1_1_prospect_a9b6b113496b716867e7d03f11c0a0a94}.
+
+\mbox{\label{class_d_b___projet___active_1_1_client_afb75338d5f2aee21fcc69fffb1e0da7e}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!Mise\_A\_Jour@{Mise\_A\_Jour}}
+\index{Mise\_A\_Jour@{Mise\_A\_Jour}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{Mise\_A\_Jour()}
+{\footnotesize\ttfamily virtual void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Mise\+\_\+\+A\+\_\+\+Jour (\begin{DoxyParamCaption}\item[{string}]{f\+\_\+la\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Methode d instance pour la mise à jour des champs de la table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+la\+Table} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect} \doxyref{}{p.}{class_d_b___projet___active_1_1_prospect_a5dbdb0f2a308b0e9905ad755b11fce5d}.
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a5f91b76b58f9eed05014577aac5a6708}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!RaisonSocialeMatch@{RaisonSocialeMatch}}
+\index{RaisonSocialeMatch@{RaisonSocialeMatch}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{RaisonSocialeMatch()}
+{\footnotesize\ttfamily bool D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Raison\+Sociale\+Match (\begin{DoxyParamCaption}\item[{string}]{a\+Comparer }\end{DoxyParamCaption})}
+
+
+
+Methode d\textquotesingle{}intance pour comparer le nom de la raison sociale avec une saisie dynamique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Comparer} & Texte ecrit dans une Text\+Box de recherche\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_client_ab2fb2492eadf31c1458069dc7a6ef97a}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!SupClient@{SupClient}}
+\index{SupClient@{SupClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{SupClient()}
+{\footnotesize\ttfamily virtual void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+Sup\+Client (\begin{DoxyParamCaption}\item[{string}]{f\+\_\+la\+Table,  }\item[{int}]{num\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Methode pour supprimer un \doxyref{Client}{p.}{class_d_b___projet___active_1_1_client}... et il y a beaucoup de tables à contrôler, donc seul le bouton pour un \doxyref{Prospect}{p.}{class_d_b___projet___active_1_1_prospect} a ete code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+la\+Table} & =\char`\"{}\+C\+L\+I\+E\+N\+T\char`\"{}\\
+\hline
+{\em num\+Id} & numero d identification du client selectionne dans le Data\+Grid\+View\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect} \doxyref{}{p.}{class_d_b___projet___active_1_1_prospect_aa9a1fc2a0f3aaa5c34d05b1df17ba530}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_client_a0462bb0d99bf949c3b7c5e162f98c473}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!adrClient@{adrClient}}
+\index{adrClient@{adrClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{adrClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+adr\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a744749ad4839568118e307e8694624fb}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!caClient@{caClient}}
+\index{caClient@{caClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{caClient}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+ca\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a1b4f833561ba622dd1e8e7acd2672fd7}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!commClient@{commClient}}
+\index{commClient@{commClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{commClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+comm\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a19345606d726120d7a4c907b5dc2165b}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!domaineClient@{domaineClient}}
+\index{domaineClient@{domaineClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{domaineClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+domaine\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_affe3303a6d27c7a7f654230b3a4f7cc9}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!idClient@{idClient}}
+\index{idClient@{idClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{idClient}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+id\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a14acac4dbf39569432ce0ef2c96bdca4}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!nbrEmp@{nbrEmp}}
+\index{nbrEmp@{nbrEmp}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{nbrEmp}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+nbr\+Emp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a62cce6b940e51d6be71f86e9976ba1a9}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!rsClient@{rsClient}}
+\index{rsClient@{rsClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{rsClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+rs\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a456c769feb18b9f136e89f53e6d648d3}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!telClient@{telClient}}
+\index{telClient@{telClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{telClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+tel\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a6d4762a2879d6d1f87ba892ee93860a4}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!typeClient@{typeClient}}
+\index{typeClient@{typeClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{typeClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+type\+Client\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_client_a9a193b528ec6060b3acd6b4ab4eff789}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_adrClient@{acc\_adrClient}}
+\index{acc\_adrClient@{acc\_adrClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_adrClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+adr\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a451934074c91d76545cbffe989acb731}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_caClient@{acc\_caClient}}
+\index{acc\_caClient@{acc\_caClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_caClient}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+ca\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_abbab763499f0554a0f5be7164a08e3be}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_commClient@{acc\_commClient}}
+\index{acc\_commClient@{acc\_commClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_commClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+comm\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a5aa77db4008f0c5861fdfdeb3bdb1f47}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_domaineClient@{acc\_domaineClient}}
+\index{acc\_domaineClient@{acc\_domaineClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_domaineClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+domaine\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_adf3a8091a1b7ecb2dbefa0f92a39b480}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_idClient@{acc\_idClient}}
+\index{acc\_idClient@{acc\_idClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_idClient}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+id\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_abb333f33e4a436f3da8b22f5d137dd69}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_nbrEmp@{acc\_nbrEmp}}
+\index{acc\_nbrEmp@{acc\_nbrEmp}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_nbrEmp}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+nbr\+Emp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a6502db6884887328986415330ca232cb}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_rsClient@{acc\_rsClient}}
+\index{acc\_rsClient@{acc\_rsClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_rsClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+rs\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_ab568c8b8990c779fbbf86dd8c36f764e}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_telClient@{acc\_telClient}}
+\index{acc\_telClient@{acc\_telClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_telClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+tel\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_client_a56a4c2c0bd6074b089699c74d14185cd}} 
+\index{DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}!acc\_typeClient@{acc\_typeClient}}
+\index{acc\_typeClient@{acc\_typeClient}!DB\_Projet\_Active.Client@{DB\_Projet\_Active.Client}}
+\subsubsection{acc\_typeClient}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client.\+acc\+\_\+type\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Client.\+cs}\end{DoxyCompactItemize}

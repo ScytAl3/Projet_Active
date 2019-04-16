@@ -1,0 +1,263 @@
+\section{D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect Class Reference}
+\label{class_d_b___projet___active_1_1_prospect}\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+
+
+Inherits \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Prospect} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut \end{DoxyCompactList}\item 
+\textbf{ Prospect} (string raison, string type, string domaine, string adresse, string num\+Tel, int chiffre, string commentaires, int nb\+Employe, Date\+Time date\+Prosp, bool interet)
+\begin{DoxyCompactList}\small\item\em Constructeur avec 10 variables pour instancier la Class \doxyref{Prospect}{p.}{class_d_b___projet___active_1_1_prospect} pour creation \end{DoxyCompactList}\item 
+bool \textbf{ Relancer} ()
+\begin{DoxyCompactList}\small\item\em Methode qui verifie que la duree entre la date de prospection + 30 jours est inferieure a la date du jour et que le prospect est interresse \end{DoxyCompactList}\item 
+override void \textbf{ Crea\+Client} (string f\+\_\+la\+Table)
+\begin{DoxyCompactList}\small\item\em Methode d instance pour la creation d un prospect dans la table P\+R\+O\+S\+P\+E\+CT \end{DoxyCompactList}\item 
+override void \textbf{ Mise\+\_\+\+A\+\_\+\+Jour} (string f\+\_\+la\+Table)
+\begin{DoxyCompactList}\small\item\em Methode d instance pour la mise à jour des attributs d un prospect de la table P\+R\+O\+S\+P\+E\+CT \end{DoxyCompactList}\item 
+override void \textbf{ Sup\+Client} (string f\+\_\+la\+Table, int num\+Id)
+\begin{DoxyCompactList}\small\item\em Methode d instance pour la suppression d un prospect dans la table P\+R\+O\+S\+P\+E\+CT \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static new List$<$ \textbf{ Client} $>$ \textbf{ Affiche\+List\+Client} (string la\+Table)
+\begin{DoxyCompactList}\small\item\em Methode de Class qui renvoie la liste de tous les Prospects de la table selectionnee \end{DoxyCompactList}\item 
+static void \textbf{ Dernier\+Id\+Creer} ()
+\begin{DoxyCompactList}\small\item\em Methode de class pour recuperer le dernier identifiant \doxyref{Prospect}{p.}{class_d_b___projet___active_1_1_prospect} creer \end{DoxyCompactList}\item 
+static int \textbf{ Crea\+\_\+\+Num\+Id\+Prospect} ()
+\begin{DoxyCompactList}\small\item\em Methode pour creer le numero identifiant d un P\+R\+O\+S\+P\+E\+CT \+: annee + nombre incremente \end{DoxyCompactList}\item 
+static void \textbf{ Incrementer\+Compeur} ()
+\begin{DoxyCompactList}\small\item\em Methode pour incrementer le compteur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ dernier\+Identifiant}
+\item 
+static int \textbf{ derniere\+Anee}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \textbf{ acc\+\_\+date\+Prospect}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+bool \textbf{ acc\+\_\+interet\+Prospec}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a25d0e27506b849aa57950ad509b6a10e}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!Prospect@{Prospect}}
+\index{Prospect@{Prospect}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{Prospect()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Prospect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut 
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a03e9423e46564727d70728c2127af3e7}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!Prospect@{Prospect}}
+\index{Prospect@{Prospect}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{Prospect()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Prospect (\begin{DoxyParamCaption}\item[{string}]{raison,  }\item[{string}]{type,  }\item[{string}]{domaine,  }\item[{string}]{adresse,  }\item[{string}]{num\+Tel,  }\item[{int}]{chiffre,  }\item[{string}]{commentaires,  }\item[{int}]{nb\+Employe,  }\item[{Date\+Time}]{date\+Prosp,  }\item[{bool}]{interet }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec 10 variables pour instancier la Class \doxyref{Prospect}{p.}{class_d_b___projet___active_1_1_prospect} pour creation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raison} & \\
+\hline
+{\em type} & \\
+\hline
+{\em domaine} & \\
+\hline
+{\em adresse} & \\
+\hline
+{\em num\+Tel} & \\
+\hline
+{\em chiffre} & \\
+\hline
+{\em commentaires} & \\
+\hline
+{\em nb\+Employe} & \\
+\hline
+{\em date\+Prosp} & \\
+\hline
+{\em interet} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_aa45dd2d84b4f98110fea5932b38e49b4}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!AfficheListClient@{AfficheListClient}}
+\index{AfficheListClient@{AfficheListClient}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{AfficheListClient()}
+{\footnotesize\ttfamily static new List$<$\textbf{ Client}$>$ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Affiche\+List\+Client (\begin{DoxyParamCaption}\item[{string}]{la\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode de Class qui renvoie la liste de tous les Prospects de la table selectionnee 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la\+Table} & \\
+\hline
+{\em le\+Where} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a90f086171afd989209b333acf7abd721}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!Crea\_NumIdProspect@{Crea\_NumIdProspect}}
+\index{Crea\_NumIdProspect@{Crea\_NumIdProspect}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{Crea\_NumIdProspect()}
+{\footnotesize\ttfamily static int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Crea\+\_\+\+Num\+Id\+Prospect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour creer le numero identifiant d un P\+R\+O\+S\+P\+E\+CT \+: annee + nombre incremente 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a9b6b113496b716867e7d03f11c0a0a94}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!CreaClient@{CreaClient}}
+\index{CreaClient@{CreaClient}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{CreaClient()}
+{\footnotesize\ttfamily override void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Crea\+Client (\begin{DoxyParamCaption}\item[{string}]{f\+\_\+la\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Methode d instance pour la creation d un prospect dans la table P\+R\+O\+S\+P\+E\+CT 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+la\+Table} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client} \doxyref{}{p.}{class_d_b___projet___active_1_1_client_ad31485e21106ffd53bb272b5fd520b5a}.
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_ace6760ae749e64cff1230ba68fbdabc1}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!DernierIdCreer@{DernierIdCreer}}
+\index{DernierIdCreer@{DernierIdCreer}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{DernierIdCreer()}
+{\footnotesize\ttfamily static void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Dernier\+Id\+Creer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode de class pour recuperer le dernier identifiant \doxyref{Prospect}{p.}{class_d_b___projet___active_1_1_prospect} creer 
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a1e8bd4465a2d82683b5c3d9a6d0ceeb1}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!IncrementerCompeur@{IncrementerCompeur}}
+\index{IncrementerCompeur@{IncrementerCompeur}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{IncrementerCompeur()}
+{\footnotesize\ttfamily static void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Incrementer\+Compeur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour incrementer le compteur 
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a5dbdb0f2a308b0e9905ad755b11fce5d}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!Mise\_A\_Jour@{Mise\_A\_Jour}}
+\index{Mise\_A\_Jour@{Mise\_A\_Jour}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{Mise\_A\_Jour()}
+{\footnotesize\ttfamily override void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Mise\+\_\+\+A\+\_\+\+Jour (\begin{DoxyParamCaption}\item[{string}]{f\+\_\+la\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Methode d instance pour la mise à jour des attributs d un prospect de la table P\+R\+O\+S\+P\+E\+CT 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+la\+Table} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client} \doxyref{}{p.}{class_d_b___projet___active_1_1_client_afb75338d5f2aee21fcc69fffb1e0da7e}.
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a3d03b5808ebe62d4a042ca62fadf48c8}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!Relancer@{Relancer}}
+\index{Relancer@{Relancer}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{Relancer()}
+{\footnotesize\ttfamily bool D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Relancer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Methode qui verifie que la duree entre la date de prospection + 30 jours est inferieure a la date du jour et que le prospect est interresse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date\+Prospection} & date a laquelle a eu lieu la prospection\\
+\hline
+{\em interet} & interet du prospect =true, =false\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_aa9a1fc2a0f3aaa5c34d05b1df17ba530}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!SupClient@{SupClient}}
+\index{SupClient@{SupClient}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{SupClient()}
+{\footnotesize\ttfamily override void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+Sup\+Client (\begin{DoxyParamCaption}\item[{string}]{f\+\_\+la\+Table,  }\item[{int}]{num\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Methode d instance pour la suppression d un prospect dans la table P\+R\+O\+S\+P\+E\+CT 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+\_\+la\+Table} & le nom de la table, ici \char`\"{}\+P\+R\+O\+S\+P\+E\+C\+T\char`\"{}\\
+\hline
+{\em num\+Id} & le numero d identification du prospect que l on veut supprimer, obtenu a partir du Data\+Grid\+View\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \textbf{ D\+B\+\_\+\+Projet\+\_\+\+Active.\+Client} \doxyref{}{p.}{class_d_b___projet___active_1_1_client_ab2fb2492eadf31c1458069dc7a6ef97a}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a4f65342bfe3500adf30bf2dfaf824b36}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!derniereAnee@{derniereAnee}}
+\index{derniereAnee@{derniereAnee}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{derniereAnee}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+derniere\+Anee\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a0710cd8d08c98341a97af1134c98cc49}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!dernierIdentifiant@{dernierIdentifiant}}
+\index{dernierIdentifiant@{dernierIdentifiant}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{dernierIdentifiant}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+dernier\+Identifiant\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a88165743bcba4205e0b36c5c68f3c736}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!acc\_dateProspect@{acc\_dateProspect}}
+\index{acc\_dateProspect@{acc\_dateProspect}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{acc\_dateProspect}
+{\footnotesize\ttfamily Date\+Time D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+acc\+\_\+date\+Prospect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_prospect_a3a23435f3c7cce13b839cdf71c96cb74}} 
+\index{DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}!acc\_interetProspec@{acc\_interetProspec}}
+\index{acc\_interetProspec@{acc\_interetProspec}!DB\_Projet\_Active.Prospect@{DB\_Projet\_Active.Prospect}}
+\subsubsection{acc\_interetProspec}
+{\footnotesize\ttfamily bool D\+B\+\_\+\+Projet\+\_\+\+Active.\+Prospect.\+acc\+\_\+interet\+Prospec\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Prospect.\+cs}\end{DoxyCompactItemize}

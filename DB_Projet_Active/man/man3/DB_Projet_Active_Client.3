@@ -1,0 +1,259 @@
+.TH "DB_Projet_Active.Client" 3 "Mon Apr 1 2019" "Version 0.1" "Projet_Active_c#" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DB_Projet_Active.Client \- La Class \fBClient\fP qui permet d instancier des Clients\&. Contient les methodes pour generer la liste de client, creer, mettre a jour et supprimer un client  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBDB_Projet_Active\&.Prospect\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBClient\fP ()"
+.br
+.RI "Constructeur par defaut "
+.ti -1c
+.RI "\fBClient\fP (string raison, string type, string domaine, string adresse, string numTel, int chiffre, string commentaires, int nbEmploye)"
+.br
+.RI "Constructeur avec 8 variables pour instancier la class \fBClient\fP pour mise a jour "
+.ti -1c
+.RI "bool \fBRaisonSocialeMatch\fP (string aComparer)"
+.br
+.RI "Methode d'intance pour comparer le nom de la raison sociale avec une saisie dynamique "
+.ti -1c
+.RI "virtual void \fBCreaClient\fP (string f_laTable)"
+.br
+.RI "Methode d instance pour la creation des champs de la table "
+.ti -1c
+.RI "virtual void \fBMise_A_Jour\fP (string f_laTable)"
+.br
+.RI "Methode d instance pour la mise à jour des champs de la table "
+.ti -1c
+.RI "virtual void \fBSupClient\fP (string f_laTable, int numId)"
+.br
+.RI "Methode pour supprimer un \fBClient\fP\&.\&.\&. et il y a beaucoup de tables à contrôler, donc seul le bouton pour un \fBProspect\fP a ete code "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static List< \fBClient\fP > \fBAfficheListClient\fP (string laTable)"
+.br
+.RI "Methode de Class qui renvoie la liste de tous les clients de la table selectionnee "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBidClient\fP"
+.br
+.ti -1c
+.RI "string \fBrsClient\fP"
+.br
+.ti -1c
+.RI "string \fBtypeClient\fP"
+.br
+.ti -1c
+.RI "string \fBdomaineClient\fP"
+.br
+.ti -1c
+.RI "string \fBadrClient\fP"
+.br
+.ti -1c
+.RI "string \fBtelClient\fP"
+.br
+.ti -1c
+.RI "int \fBcaClient\fP"
+.br
+.ti -1c
+.RI "string \fBcommClient\fP"
+.br
+.ti -1c
+.RI "int \fBnbrEmp\fP"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBacc_idClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_rsClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_typeClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_domaineClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_adrClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_telClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBacc_caClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_commClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBacc_nbrEmp\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La Class \fBClient\fP qui permet d instancier des Clients\&. Contient les methodes pour generer la liste de client, creer, mettre a jour et supprimer un client 
+
+Auteur : Franck Jakubowski
+.PP
+Version : 0\&.1
+.PP
+Date de creation : 07/01/2019
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DB_Projet_Active\&.Client\&.Client ()"
+
+.PP
+Constructeur par defaut 
+.SS "DB_Projet_Active\&.Client\&.Client (string raison, string type, string domaine, string adresse, string numTel, int chiffre, string commentaires, int nbEmploye)"
+
+.PP
+Constructeur avec 8 variables pour instancier la class \fBClient\fP pour mise a jour 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIraison\fP 
+.br
+\fItype\fP 
+.br
+\fIdomaine\fP 
+.br
+\fIadresse\fP 
+.br
+\fInumTel\fP 
+.br
+\fIchiffre\fP 
+.br
+\fInbEmploye\fP 
+.br
+\fIcommentaires\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static List<\fBClient\fP> DB_Projet_Active\&.Client\&.AfficheListClient (string laTable)\fC [static]\fP"
+
+.PP
+Methode de Class qui renvoie la liste de tous les clients de la table selectionnee 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlaTable\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "virtual void DB_Projet_Active\&.Client\&.CreaClient (string f_laTable)\fC [virtual]\fP"
+
+.PP
+Methode d instance pour la creation des champs de la table 
+.PP
+Reimplemented in \fBDB_Projet_Active\&.Prospect\fP\&.
+.SS "virtual void DB_Projet_Active\&.Client\&.Mise_A_Jour (string f_laTable)\fC [virtual]\fP"
+
+.PP
+Methode d instance pour la mise à jour des champs de la table 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIf_laTable\fP 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBDB_Projet_Active\&.Prospect\fP\&.
+.SS "bool DB_Projet_Active\&.Client\&.RaisonSocialeMatch (string aComparer)"
+
+.PP
+Methode d'intance pour comparer le nom de la raison sociale avec une saisie dynamique 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaComparer\fP Texte ecrit dans une TextBox de recherche
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "virtual void DB_Projet_Active\&.Client\&.SupClient (string f_laTable, int numId)\fC [virtual]\fP"
+
+.PP
+Methode pour supprimer un \fBClient\fP\&.\&.\&. et il y a beaucoup de tables à contrôler, donc seul le bouton pour un \fBProspect\fP a ete code 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIf_laTable\fP ='CLIENT'
+.br
+\fInumId\fP numero d identification du client selectionne dans le DataGridView
+.RE
+.PP
+
+.PP
+Reimplemented in \fBDB_Projet_Active\&.Prospect\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "string DB_Projet_Active\&.Client\&.adrClient\fC [protected]\fP"
+
+.SS "int DB_Projet_Active\&.Client\&.caClient\fC [protected]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.commClient\fC [protected]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.domaineClient\fC [protected]\fP"
+
+.SS "int DB_Projet_Active\&.Client\&.idClient\fC [protected]\fP"
+
+.SS "int DB_Projet_Active\&.Client\&.nbrEmp\fC [protected]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.rsClient\fC [protected]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.telClient\fC [protected]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.typeClient\fC [protected]\fP"
+
+.SH "Property Documentation"
+.PP 
+.SS "string DB_Projet_Active\&.Client\&.acc_adrClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "int DB_Projet_Active\&.Client\&.acc_caClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.acc_commClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.acc_domaineClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "int DB_Projet_Active\&.Client\&.acc_idClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "int DB_Projet_Active\&.Client\&.acc_nbrEmp\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.acc_rsClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.acc_telClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.Client\&.acc_typeClient\fC [get]\fP, \fC [set]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_Active_c# from the source code\&.

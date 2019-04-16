@@ -1,0 +1,180 @@
+.TH "DB_Projet_Active.FonctionSQL" 3 "Mon Apr 1 2019" "Version 0.1" "Projet_Active_c#" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DB_Projet_Active.FonctionSQL
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBTestConnection\fP ()"
+.br
+.RI "Traitement pour tester la connexion a la base de donnees "
+.ti -1c
+.RI "static bool \fBExister\fP (string sqlRequete)"
+.br
+.RI "Methode pour verifier l existence d une ou plusieurs lignes de resultat d une requete "
+.ti -1c
+.RI "static DataTable \fBAdapter\fP (string selectCommand)"
+.br
+.RI "Methode pour remplir un DataGridView "
+.ti -1c
+.RI "static SqlDataReader \fBLecture\fP (string sqlRequete)"
+.br
+.RI "Methode pour lire une ligne de resultat d une requete "
+.ti -1c
+.RI "static int \fBCompteLigne\fP (string select, string table, string where)"
+.br
+.RI "Methode pour compter le nombre de ligne d une TABLE en fonction d une condition where "
+.ti -1c
+.RI "static int \fBCompte\fP (string requete)"
+.br
+.RI "Methode pour recuperer le prochain numero d identification lors de la creation dans une TABLE si le numero d identification n est pas en AUTO-INCREMENT ! "
+.ti -1c
+.RI "static void \fBInserer\fP (string table, string valeur)"
+.br
+.RI "Methode pour inserer une ligne dans la table "
+.ti -1c
+.RI "static void \fBMiseAjour\fP (string table, string set, string where)"
+.br
+.RI "Methode pour mettre a jour une ligne dans la table "
+.ti -1c
+.RI "static void \fBSupprimer\fP (string table, string where)"
+.br
+.RI "Methode pour supprimer une ligne dans la table "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "static DataTable DB_Projet_Active\&.FonctionSQL\&.Adapter (string selectCommand)\fC [static]\fP"
+
+.PP
+Methode pour remplir un DataGridView 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIselectCommand\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Retourne une table
+.RE
+.PP
+
+.SS "static int DB_Projet_Active\&.FonctionSQL\&.Compte (string requete)\fC [static]\fP"
+
+.PP
+Methode pour recuperer le prochain numero d identification lors de la creation dans une TABLE si le numero d identification n est pas en AUTO-INCREMENT ! 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrequete\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static int DB_Projet_Active\&.FonctionSQL\&.CompteLigne (string select, string table, string where)\fC [static]\fP"
+
+.PP
+Methode pour compter le nombre de ligne d une TABLE en fonction d une condition where 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIselect\fP 
+.br
+\fItable\fP CLIENT ou PROSPECT
+.br
+\fIwhere\fP La condition where sera utilisee avec la table PROSPECT
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static bool DB_Projet_Active\&.FonctionSQL\&.Exister (string sqlRequete)\fC [static]\fP"
+
+.PP
+Methode pour verifier l existence d une ou plusieurs lignes de resultat d une requete 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsqlRequete\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.SS "static void DB_Projet_Active\&.FonctionSQL\&.Inserer (string table, string valeur)\fC [static]\fP"
+
+.PP
+Methode pour inserer une ligne dans la table 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItable\fP 
+.br
+\fIvaleur\fP 
+.RE
+.PP
+
+.SS "static SqlDataReader DB_Projet_Active\&.FonctionSQL\&.Lecture (string sqlRequete)\fC [static]\fP"
+
+.PP
+Methode pour lire une ligne de resultat d une requete 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsqlRequete\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+retourne un Reader
+.RE
+.PP
+
+.SS "static void DB_Projet_Active\&.FonctionSQL\&.MiseAjour (string table, string set, string where)\fC [static]\fP"
+
+.PP
+Methode pour mettre a jour une ligne dans la table 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItable\fP 
+.br
+\fIset\fP 
+.br
+\fIwhere\fP 
+.RE
+.PP
+
+.SS "static void DB_Projet_Active\&.FonctionSQL\&.Supprimer (string table, string where)\fC [static]\fP"
+
+.PP
+Methode pour supprimer une ligne dans la table 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItable\fP 
+.br
+\fIwhere\fP 
+.RE
+.PP
+
+.SS "static void DB_Projet_Active\&.FonctionSQL\&.TestConnection ()\fC [static]\fP"
+
+.PP
+Traitement pour tester la connexion a la base de donnees 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_Active_c# from the source code\&.

@@ -1,0 +1,165 @@
+\section{D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire Class Reference}
+\label{class_d_b___projet___active_1_1_formulaire}\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+
+
+La Class \doxyref{Formulaire}{p.}{class_d_b___projet___active_1_1_formulaire} qui affiche, dans des Text\+Box, Date\+Time\+Picker et Check\+Box, les informations concernant la creation ou la mise a jour des C\+L\+I\+E\+N\+TS ou des P\+R\+O\+S\+P\+E\+C\+TS. Contient les methodes pour controler la saisie, et les differents boutons (valider et retour)  
+
+
+
+
+Inherits Form.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Formulaire} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par defaut \end{DoxyCompactList}\item 
+\textbf{ Formulaire} (bool choix, string typ\+Ges, string table)
+\begin{DoxyCompactList}\small\item\em Constructeur avec 3 parametres pour la creation d un C\+L\+I\+E\+N\+T/\+P\+R\+O\+S\+P\+E\+CT \end{DoxyCompactList}\item 
+\textbf{ Formulaire} (bool choix, string typ\+Ges, string table, \textbf{ Client} maj\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Constructeur avec 4 parametres pour la mise a jour d un C\+L\+I\+E\+N\+T/\+P\+R\+O\+S\+P\+E\+CT \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \textbf{ Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ acc\+\_\+gest\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+type\+Gestion}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+int \textbf{ acc\+\_\+id\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+string \textbf{ acc\+\_\+la\+Table}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\textbf{ Client} \textbf{ Acc\+\_\+le\+Client}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\textbf{ Prospect} \textbf{ Acc\+\_\+le\+Prospect}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La Class \doxyref{Formulaire}{p.}{class_d_b___projet___active_1_1_formulaire} qui affiche, dans des Text\+Box, Date\+Time\+Picker et Check\+Box, les informations concernant la creation ou la mise a jour des C\+L\+I\+E\+N\+TS ou des P\+R\+O\+S\+P\+E\+C\+TS. Contient les methodes pour controler la saisie, et les differents boutons (valider et retour) 
+
+Auteur \+: Franck Jakubowski
+
+Version \+: 0.\+1
+
+Date de creation \+: 07/01/2019
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_aac72bda1b5ee68ba804b82fd03903d12}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!Formulaire@{Formulaire}}
+\index{Formulaire@{Formulaire}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{Formulaire()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+Formulaire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par defaut 
+
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_a8117462a103b6eb79d5cd91beb5de732}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!Formulaire@{Formulaire}}
+\index{Formulaire@{Formulaire}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{Formulaire()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+Formulaire (\begin{DoxyParamCaption}\item[{bool}]{choix,  }\item[{string}]{typ\+Ges,  }\item[{string}]{table }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec 3 parametres pour la creation d un C\+L\+I\+E\+N\+T/\+P\+R\+O\+S\+P\+E\+CT 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choix} & true=C\+L\+I\+E\+NT, false=P\+R\+O\+S\+P\+E\+CT\\
+\hline
+{\em typ\+Ges} & \char`\"{}\+C\+R\+E\+A\char`\"{}\\
+\hline
+{\em table} & \char`\"{}\+C\+L\+I\+E\+N\+T\char`\"{} ou \char`\"{}\+P\+R\+O\+S\+P\+E\+C\+T\char`\"{}\\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_acd44a08fece56c83e3dd6f2a4d3fd75e}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!Formulaire@{Formulaire}}
+\index{Formulaire@{Formulaire}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{Formulaire()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+Formulaire (\begin{DoxyParamCaption}\item[{bool}]{choix,  }\item[{string}]{typ\+Ges,  }\item[{string}]{table,  }\item[{\textbf{ Client}}]{maj\+\_\+client }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec 4 parametres pour la mise a jour d un C\+L\+I\+E\+N\+T/\+P\+R\+O\+S\+P\+E\+CT 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choix} & true=C\+L\+I\+E\+NT, false=P\+R\+O\+S\+P\+E\+CT\\
+\hline
+{\em typ\+Ges} & \char`\"{}\+M\+A\+J\char`\"{}\\
+\hline
+{\em table} & \char`\"{}\+C\+L\+I\+E\+N\+T\char`\"{} ou \char`\"{}\+P\+R\+O\+S\+P\+E\+C\+T\char`\"{}\\
+\hline
+{\em maj\+\_\+client} & Object selectionne dans le Data\+Grid\+View\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_aa49cc659c830735a21144b79b9b1a30f}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{Dispose()}
+{\footnotesize\ttfamily override void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_a19eb646efbcaa6895cbc83cbcfde1fa5}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!acc\_gestClient@{acc\_gestClient}}
+\index{acc\_gestClient@{acc\_gestClient}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{acc\_gestClient}
+{\footnotesize\ttfamily bool D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+acc\+\_\+gest\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_abc5da09161c4a7c8bb01e12c03aff981}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!acc\_idClient@{acc\_idClient}}
+\index{acc\_idClient@{acc\_idClient}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{acc\_idClient}
+{\footnotesize\ttfamily int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+acc\+\_\+id\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_a7617cece0adba1ceb7697148e54291de}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!acc\_laTable@{acc\_laTable}}
+\index{acc\_laTable@{acc\_laTable}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{acc\_laTable}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+acc\+\_\+la\+Table\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_ae6325ff17a2e95e7072dec4d36597e72}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!Acc\_leClient@{Acc\_leClient}}
+\index{Acc\_leClient@{Acc\_leClient}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{Acc\_leClient}
+{\footnotesize\ttfamily \textbf{ Client} D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+Acc\+\_\+le\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_a35eb89282c0e659dd8eeaf9ffed601a0}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!Acc\_leProspect@{Acc\_leProspect}}
+\index{Acc\_leProspect@{Acc\_leProspect}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{Acc\_leProspect}
+{\footnotesize\ttfamily \textbf{ Prospect} D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+Acc\+\_\+le\+Prospect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\label{class_d_b___projet___active_1_1_formulaire_a8bb489732412ac845958fb663f031923}} 
+\index{DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}!acc\_typeGestion@{acc\_typeGestion}}
+\index{acc\_typeGestion@{acc\_typeGestion}!DB\_Projet\_Active.Formulaire@{DB\_Projet\_Active.Formulaire}}
+\subsubsection{acc\_typeGestion}
+{\footnotesize\ttfamily string D\+B\+\_\+\+Projet\+\_\+\+Active.\+Formulaire.\+acc\+\_\+type\+Gestion\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Formulaire.\+cs}\item 
+\textbf{ Formulaire.\+Designer.\+cs}\end{DoxyCompactItemize}

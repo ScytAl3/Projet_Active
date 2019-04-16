@@ -1,0 +1,188 @@
+\section{D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+QL Class Reference}
+\label{class_d_b___projet___active_1_1_fonction_s_q_l}\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ Test\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Traitement pour tester la connexion a la base de donnees \end{DoxyCompactList}\item 
+static bool \textbf{ Exister} (string sql\+Requete)
+\begin{DoxyCompactList}\small\item\em Methode pour verifier l existence d une ou plusieurs lignes de resultat d une requete \end{DoxyCompactList}\item 
+static Data\+Table \textbf{ Adapter} (string select\+Command)
+\begin{DoxyCompactList}\small\item\em Methode pour remplir un Data\+Grid\+View \end{DoxyCompactList}\item 
+static Sql\+Data\+Reader \textbf{ Lecture} (string sql\+Requete)
+\begin{DoxyCompactList}\small\item\em Methode pour lire une ligne de resultat d une requete \end{DoxyCompactList}\item 
+static int \textbf{ Compte\+Ligne} (string select, string table, string where)
+\begin{DoxyCompactList}\small\item\em Methode pour compter le nombre de ligne d une T\+A\+B\+LE en fonction d une condition where \end{DoxyCompactList}\item 
+static int \textbf{ Compte} (string requete)
+\begin{DoxyCompactList}\small\item\em Methode pour recuperer le prochain numero d identification lors de la creation dans une T\+A\+B\+LE si le numero d identification n est pas en A\+U\+T\+O-\/\+I\+N\+C\+R\+E\+M\+E\+NT ! \end{DoxyCompactList}\item 
+static void \textbf{ Inserer} (string table, string valeur)
+\begin{DoxyCompactList}\small\item\em Methode pour inserer une ligne dans la table \end{DoxyCompactList}\item 
+static void \textbf{ Mise\+Ajour} (string table, string set, string where)
+\begin{DoxyCompactList}\small\item\em Methode pour mettre a jour une ligne dans la table \end{DoxyCompactList}\item 
+static void \textbf{ Supprimer} (string table, string where)
+\begin{DoxyCompactList}\small\item\em Methode pour supprimer une ligne dans la table \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_a66b653f2a7d59d04cac5946751d79d0a}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{Adapter()}
+{\footnotesize\ttfamily static Data\+Table D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Adapter (\begin{DoxyParamCaption}\item[{string}]{select\+Command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour remplir un Data\+Grid\+View 
+
+
+\begin{DoxyParams}{Parameters}
+{\em select\+Command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne une table
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_ae2bd05ada96dba7e25c282195588c1ff}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!Compte@{Compte}}
+\index{Compte@{Compte}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{Compte()}
+{\footnotesize\ttfamily static int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Compte (\begin{DoxyParamCaption}\item[{string}]{requete }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour recuperer le prochain numero d identification lors de la creation dans une T\+A\+B\+LE si le numero d identification n est pas en A\+U\+T\+O-\/\+I\+N\+C\+R\+E\+M\+E\+NT ! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em requete} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_a717706aa5be603169ecc0a6098477cb6}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!CompteLigne@{CompteLigne}}
+\index{CompteLigne@{CompteLigne}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{CompteLigne()}
+{\footnotesize\ttfamily static int D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Compte\+Ligne (\begin{DoxyParamCaption}\item[{string}]{select,  }\item[{string}]{table,  }\item[{string}]{where }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour compter le nombre de ligne d une T\+A\+B\+LE en fonction d une condition where 
+
+
+\begin{DoxyParams}{Parameters}
+{\em select} & \\
+\hline
+{\em table} & C\+L\+I\+E\+NT ou P\+R\+O\+S\+P\+E\+CT\\
+\hline
+{\em where} & La condition where sera utilisee avec la table P\+R\+O\+S\+P\+E\+CT\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_a4246965586e2bc7669e0b1939d843987}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!Exister@{Exister}}
+\index{Exister@{Exister}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{Exister()}
+{\footnotesize\ttfamily static bool D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Exister (\begin{DoxyParamCaption}\item[{string}]{sql\+Requete }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour verifier l existence d une ou plusieurs lignes de resultat d une requete 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+Requete} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_ae0498a4760c8ae68385692b06716adfc}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!Inserer@{Inserer}}
+\index{Inserer@{Inserer}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{Inserer()}
+{\footnotesize\ttfamily static void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Inserer (\begin{DoxyParamCaption}\item[{string}]{table,  }\item[{string}]{valeur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour inserer une ligne dans la table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & \\
+\hline
+{\em valeur} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_a932d9adcf7a102f4580dec18dd3f6966}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!Lecture@{Lecture}}
+\index{Lecture@{Lecture}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{Lecture()}
+{\footnotesize\ttfamily static Sql\+Data\+Reader D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Lecture (\begin{DoxyParamCaption}\item[{string}]{sql\+Requete }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour lire une ligne de resultat d une requete 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql\+Requete} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne un Reader
+\end{DoxyReturn}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_a4a6c50c6ff240b9c017e84099aa58f93}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!MiseAjour@{MiseAjour}}
+\index{MiseAjour@{MiseAjour}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{MiseAjour()}
+{\footnotesize\ttfamily static void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Mise\+Ajour (\begin{DoxyParamCaption}\item[{string}]{table,  }\item[{string}]{set,  }\item[{string}]{where }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour mettre a jour une ligne dans la table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & \\
+\hline
+{\em set} & \\
+\hline
+{\em where} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_aac349ac935c424ca55201c8981654309}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!Supprimer@{Supprimer}}
+\index{Supprimer@{Supprimer}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{Supprimer()}
+{\footnotesize\ttfamily static void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Supprimer (\begin{DoxyParamCaption}\item[{string}]{table,  }\item[{string}]{where }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Methode pour supprimer une ligne dans la table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & \\
+\hline
+{\em where} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_d_b___projet___active_1_1_fonction_s_q_l_af4ac902eb2180f5eebb7e81fd20978ba}} 
+\index{DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}!TestConnection@{TestConnection}}
+\index{TestConnection@{TestConnection}!DB\_Projet\_Active.FonctionSQL@{DB\_Projet\_Active.FonctionSQL}}
+\subsubsection{TestConnection()}
+{\footnotesize\ttfamily static void D\+B\+\_\+\+Projet\+\_\+\+Active.\+Fonction\+S\+Q\+L.\+Test\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Traitement pour tester la connexion a la base de donnees 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Fonction\+S\+Q\+L.\+cs}\end{DoxyCompactItemize}

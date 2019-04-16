@@ -1,0 +1,82 @@
+.TH "DB_Projet_Active.EcranGestion" 3 "Mon Jan 7 2019" "Version 0.1" "Projet_Active_c#" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DB_Projet_Active.EcranGestion \- La Class \fBEcranGestion\fP qui affiche, dans un DataGridView, en fonction du choix a l ecran d accueil et la liste des CLIENTS ou des PROSPECTS\&. Contient les methodes pour charger le DataGridView, et les differents boutons (ajouter, mettre a jour, supprimer et retour)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Form\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEcranGestion\fP (bool choix)"
+.br
+.RI "Initialisation de tous les composants et Instanciation de la class GestionClient permet de savoir si on travaille sur la table CLIENT ou PROSPECT "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "override void \fBDispose\fP (bool disposing)"
+.br
+.RI "Clean up any resources being used\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "bool \fBacc_gestClient\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBacc_laTable\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La Class \fBEcranGestion\fP qui affiche, dans un DataGridView, en fonction du choix a l ecran d accueil et la liste des CLIENTS ou des PROSPECTS\&. Contient les methodes pour charger le DataGridView, et les differents boutons (ajouter, mettre a jour, supprimer et retour) 
+
+Auteur : Franck Jakubowski
+.PP
+Version : 0\&.1
+.PP
+Date de creation : 07/01/2019
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DB_Projet_Active\&.EcranGestion\&.EcranGestion (bool choix)"
+
+.PP
+Initialisation de tous les composants et Instanciation de la class GestionClient permet de savoir si on travaille sur la table CLIENT ou PROSPECT 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIchoix\fP booleen pour savoir si on travaille sur un CLIENT (=true) ou un PROSPECT (=false)
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "override void DB_Projet_Active\&.EcranGestion\&.Dispose (bool disposing)\fC [protected]\fP"
+
+.PP
+Clean up any resources being used\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdisposing\fP true if managed resources should be disposed; otherwise, false\&.
+.RE
+.PP
+
+.SH "Property Documentation"
+.PP 
+.SS "bool DB_Projet_Active\&.EcranGestion\&.acc_gestClient\fC [get]\fP, \fC [set]\fP"
+
+.SS "string DB_Projet_Active\&.EcranGestion\&.acc_laTable\fC [get]\fP, \fC [set]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Projet_Active_c# from the source code\&.
