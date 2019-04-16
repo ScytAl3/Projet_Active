@@ -157,7 +157,7 @@
             this.Controls.Add(this.lblGestClient);
             this.Controls.Add(this.tbx_RechClient);
             this.Name = "EcranGestion";
-            this.Text = "GestionClient";
+            this.Text = "è";
             this.Load += new System.EventHandler(this.GestionClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgGestClient)).EndInit();
             this.ResumeLayout(false);

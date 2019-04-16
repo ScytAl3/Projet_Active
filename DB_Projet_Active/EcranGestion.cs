@@ -217,14 +217,12 @@ namespace DB_Projet_Active
                 //  On cache les boutons Modifier et supprimer
                 this.btn_Modif.Visible = false;
                 this.btn_Supp.Visible = false;
-                this.Bt_Relance.Visible = false;
             }
             else
             {
                 //  On affiche les boutons Modifier et supprimer
                 this.btn_Modif.Visible = true;
                 this.btn_Supp.Visible = true;
-                this.Bt_Relance.Visible = true;
             }
         }
 
@@ -262,6 +260,7 @@ namespace DB_Projet_Active
                 //  On adapte le titre de la fenetre et la couleur a la gestion des PROSPECTS
                 lblGestClient.Text = "Gestion des prospects";
                 this.BackColor = Color.DarkCyan;
+                this.Bt_Relance.Visible = true;
                 //  On creer les en-tete des colonnes du DataGridView PROSPECT
                 dtgGestClient.ColumnCount = 11;
                 dtgGestClient.Columns[0].Name = "IDPROSPECT";
